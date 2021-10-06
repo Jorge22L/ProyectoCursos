@@ -8,10 +8,11 @@ namespace Dominio
 {
     public class tblComentario
     {
-        public int ComentarioId { get; set; }
+        public Guid ComentarioId { get; set; }
         public string Alumno { get; set; }
         public string Puntaje { get; set; }
         public string ComentarioTexto { get; set; }
+        public Guid CursoId { get; set; }
 
         public tblCurso Curso { get; set; }
     }

@@ -1,4 +1,5 @@
 ﻿using Dominio;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Persistencia
 {
-    public class CursosContext : DbContext
+    public class CursosContext : IdentityDbContext<tblUsuario>
     {
         public CursosContext(DbContextOptions options) : base(options)
         {
@@ -16,6 +17,7 @@ namespace Persistencia
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<tblCursoInstructor>().HasKey(ci => new { ci.InstructorId, ci.CursoId});
             modelBuilder.Entity<tblComentario>().HasKey(ci => new { ci.ComentarioId });
             modelBuilder.Entity<tblCurso>().HasKey(ci => new { ci.CursoId });

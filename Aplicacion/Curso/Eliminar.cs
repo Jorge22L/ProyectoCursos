@@ -1,8 +1,10 @@
-﻿using MediatR;
+﻿using Aplicacion.ManejadorError;
+using MediatR;
 using Persistencia;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -27,7 +29,8 @@ namespace Aplicacion.Curso
                 var curso = await _context.tblCurso.FindAsync(request.Id);
                 if(curso == null)
                 {
-                    throw new Exception("El curso no existe");
+                    //throw new Exception("El curso no existe");
+                    throw new ManejadorExcepcion(HttpStatusCode.NotFound, new { mensaje = "El curso no existe" });
                 }
                 _context.Remove(curso);
                 var resultado = await _context.SaveChangesAsync();

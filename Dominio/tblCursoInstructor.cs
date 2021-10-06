@@ -8,8 +8,10 @@ namespace Dominio
 {
     public class tblCursoInstructor
     {
-        public int CursoId { get; set; }
+        public Guid CursoId { get; set; }
         public tblCurso Curso { get; set; }
-        public int InstructorId { get; set; }
+        public Guid InstructorId { get; set; }
+
+        public tblInstructor Instructor { get; set; }
     }
 }
