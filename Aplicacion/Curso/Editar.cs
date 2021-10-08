@@ -1,11 +1,8 @@
-﻿using Aplicacion.ManejadorError;
-using FluentValidation;
-using MediatR;
+﻿using MediatR;
 using Persistencia;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -22,16 +19,6 @@ namespace Aplicacion.Curso
             public DateTime? FechaPublicacion { get; set; }
         }
 
-        public class EjecutaValidacion : AbstractValidator<Ejecuta>
-        {
-            public EjecutaValidacion()
-            {
-                RuleFor(x => x.Titulo).NotEmpty();
-                RuleFor(x => x.Descripcion).NotEmpty();
-                RuleFor(x => x.FechaPublicacion).NotEmpty();
-            }
-        }
-
         public class Manejador : IRequestHandler<Ejecuta>
         {
             private readonly CursosContext _context;
@@ -43,12 +30,11 @@ namespace Aplicacion.Curso
             public async Task<Unit> Handle(Ejecuta request, CancellationToken cancellationToken)
             {
                 var curso = await _context.tblCurso.FindAsync(request.CursoId);
-                if (curso == null)
+                if(curso == null)
                 {
-                    //throw new Exception("El curso no existe");
-                    throw new ManejadorExcepcion(HttpStatusCode.NotFound, new { mensaje = "El curso no existe" });
+                    throw new Exception("El curso no existe");
                 }
-
+               
                 curso.Titulo = request.Titulo ?? curso.Titulo;
                 curso.Descripcion = request.Descripcion ?? curso.Descripcion;
                 curso.FechaPublicacion = request.FechaPublicacion ?? curso.FechaPublicacion;
