@@ -2,7 +2,6 @@ C:\Users\JorgeL\source\repos\ProyectoCursos\Dominio\bin\Debug\net5.0\Dominio.dep
 C:\Users\JorgeL\source\repos\ProyectoCursos\Dominio\bin\Debug\net5.0\Dominio.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\Dominio\bin\Debug\net5.0\ref\Dominio.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\Dominio\bin\Debug\net5.0\Dominio.pdb
-C:\Users\JorgeL\source\repos\ProyectoCursos\Dominio\obj\Debug\net5.0\Dominio.csproj.AssemblyReference.cache
 C:\Users\JorgeL\source\repos\ProyectoCursos\Dominio\obj\Debug\net5.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\JorgeL\source\repos\ProyectoCursos\Dominio\obj\Debug\net5.0\Dominio.AssemblyInfoInputs.cache
 C:\Users\JorgeL\source\repos\ProyectoCursos\Dominio\obj\Debug\net5.0\Dominio.AssemblyInfo.cs

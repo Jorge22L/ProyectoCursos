@@ -1,4 +1,4 @@
-using Aplicacion.Curso;
+using Aplicacion.Cursos;
 using Dominio;
 using FluentValidation.AspNetCore;
 using MediatR;
@@ -35,29 +35,28 @@ namespace WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<CursosContext>(opt =>
-            {
+            services.AddDbContext<CursosContext>(opt => {
                 opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
             services.AddMediatR(typeof(Consulta));
-            services.AddControllers().AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<Nuevo>());
+            services.AddControllers().AddFluentValidation( cfg => cfg.RegisterValidatorsFromAssemblyContaining<Nuevo>() );
 
             var builder = services.AddIdentityCore<tblUsuario>();
             var identityBuilder = new IdentityBuilder(builder.UserType, builder.Services);
             identityBuilder.AddEntityFrameworkStores<CursosContext>();
             identityBuilder.AddSignInManager<SignInManager<tblUsuario>>();
             services.TryAddSingleton<ISystemClock, SystemClock>();
-
-            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseMiddleware<ManejadorErrorMiddleware>();
+
             if (env.IsDevelopment())
             {
-              //  app.UseDeveloperExceptionPage();
+                //app.UseDeveloperExceptionPage();
+        
             }
 
             app.UseHttpsRedirection();

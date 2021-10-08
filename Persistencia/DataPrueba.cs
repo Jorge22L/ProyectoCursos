@@ -14,7 +14,7 @@ namespace Persistencia
         {
             if (!usuarioManager.Users.Any())
             {
-                var usuario = new tblUsuario { NombreCompleto = "Jorge Morales", UserName = "JorgeL", Email = "jorgeluisreyes@doc.uca.edu.ni" };
+                var usuario = new tblUsuario { NombreCompleto = "Jorge Morales", UserName = "jorgel", Email = "jorgeluisreyes@doc.uca.edu.ni" };
                 await usuarioManager.CreateAsync(usuario, "Password1234$");
             }
         }

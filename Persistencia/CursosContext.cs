@@ -18,11 +18,11 @@ namespace Persistencia
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<tblCursoInstructor>().HasKey(ci => new { ci.InstructorId, ci.CursoId});
+            modelBuilder.Entity<tblCursoInstructor>().HasKey(ci => new { ci.InstructorId, ci.CursoId });
+            modelBuilder.Entity<tblCurso>().HasKey(ci => new { ci.CursoId});
             modelBuilder.Entity<tblComentario>().HasKey(ci => new { ci.ComentarioId });
-            modelBuilder.Entity<tblCurso>().HasKey(ci => new { ci.CursoId });
-            modelBuilder.Entity<tblInstructor>().HasKey(ci => new { ci.InstructorId });
-            modelBuilder.Entity<tblPrecio>().HasKey(ci => new { ci.PrecioId });
+            modelBuilder.Entity<tblInstructor>().HasKey(ci => new { ci.InstructorId});
+            modelBuilder.Entity<tblPrecio>().HasKey(ci => new { ci.PrecioId});
         }
 
         public DbSet<tblComentario> tblComentario { get; set; }
@@ -30,6 +30,5 @@ namespace Persistencia
         public DbSet<tblCursoInstructor> tblCursoInstructor { get; set; }
         public DbSet<tblInstructor> tblInstructor { get; set; }
         public DbSet<tblPrecio> tblPrecio { get; set; }
-
     }
 }

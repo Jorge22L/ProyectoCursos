@@ -11,7 +11,7 @@ C:\Users\JorgeL\source\repos\ProyectoCursos\Aplicacion\obj\Debug\net5.0\Aplicaci
 C:\Users\JorgeL\source\repos\ProyectoCursos\Aplicacion\obj\Debug\net5.0\Aplicacion.AssemblyInfoInputs.cache
 C:\Users\JorgeL\source\repos\ProyectoCursos\Aplicacion\obj\Debug\net5.0\Aplicacion.AssemblyInfo.cs
 C:\Users\JorgeL\source\repos\ProyectoCursos\Aplicacion\obj\Debug\net5.0\Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\JorgeL\source\repos\ProyectoCursos\Aplicacion\obj\Debug\net5.0\Aplicacion.csproj.CopyComplete
 C:\Users\JorgeL\source\repos\ProyectoCursos\Aplicacion\obj\Debug\net5.0\Aplicacion.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\Aplicacion\obj\Debug\net5.0\ref\Aplicacion.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\Aplicacion\obj\Debug\net5.0\Aplicacion.pdb
-C:\Users\JorgeL\source\repos\ProyectoCursos\Aplicacion\obj\Debug\net5.0\Aplicacion.csproj.CopyComplete

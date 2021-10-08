@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Aplicacion.Curso
+namespace Aplicacion.Cursos
 {
     public class Nuevo
     {
@@ -17,8 +17,8 @@ namespace Aplicacion.Curso
         {
             public string Titulo { get; set; }
             public string Descripcion { get; set; }
-            public DateTime FechaPublicacion { get; set; }
-        };
+            public DateTime? FechaPublicacion { get; set; }
+        }
 
         public class EjecutaValidacion : AbstractValidator<Ejecuta>
         {
@@ -33,7 +33,6 @@ namespace Aplicacion.Curso
         public class Manejador : IRequestHandler<Ejecuta>
         {
             private readonly CursosContext _context;
-
             public Manejador(CursosContext context)
             {
                 _context = context;
@@ -57,4 +56,5 @@ namespace Aplicacion.Curso
             }
         }
     }
+
 }

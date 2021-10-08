@@ -18,8 +18,6 @@ namespace WebAPI
     {
         public static void Main(string[] args)
         {
-            //CreateHostBuilder(args).Build().Run();
-
             var hostserver = CreateHostBuilder(args).Build();
             using (var ambiente = hostserver.Services.CreateScope())
             {
@@ -34,9 +32,13 @@ namespace WebAPI
                 catch (Exception e)
                 {
                     var logging = services.GetRequiredService<ILogger<Program>>();
-                    logging.LogError(e, "Ocurrío un error en la migración");
+                    logging.LogError(e, "Ocurrió un error en la migración");
                 }
+                
             }
+
+            hostserver.Run();
+
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

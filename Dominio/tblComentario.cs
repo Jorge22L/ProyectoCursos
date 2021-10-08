@@ -10,10 +10,9 @@ namespace Dominio
     {
         public Guid ComentarioId { get; set; }
         public string Alumno { get; set; }
-        public string Puntaje { get; set; }
+        public int Puntaje { get; set; }
         public string ComentarioTexto { get; set; }
         public Guid CursoId { get; set; }
-
         public tblCurso Curso { get; set; }
     }
 }

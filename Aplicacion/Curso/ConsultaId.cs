@@ -1,16 +1,14 @@
-﻿using Aplicacion.ManejadorError;
-using Dominio;
+﻿using Dominio;
 using MediatR;
 using Persistencia;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Aplicacion.Curso
+namespace Aplicacion.Cursos
 {
     public class ConsultaId
     {
@@ -22,7 +20,6 @@ namespace Aplicacion.Curso
         public class Manejador : IRequestHandler<CursoUnico, tblCurso>
         {
             private readonly CursosContext _context;
-
             public Manejador(CursosContext context)
             {
                 _context = context;
@@ -30,11 +27,6 @@ namespace Aplicacion.Curso
             public async Task<tblCurso> Handle(CursoUnico request, CancellationToken cancellationToken)
             {
                 var curso = await _context.tblCurso.FindAsync(request.Id);
-                if (curso == null)
-                {
-                    //throw new Exception("El curso no existe");
-                    throw new ManejadorExcepcion(HttpStatusCode.NotFound, new { mensaje = "El curso no existe" });
-                }
                 return curso;
             }
         }

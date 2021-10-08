@@ -14,7 +14,6 @@ namespace WebAPI.Middleware
     {
         private readonly RequestDelegate _next;
         private readonly ILogger<ManejadorErrorMiddleware> _logger;
-
         public ManejadorErrorMiddleware(RequestDelegate next, ILogger<ManejadorErrorMiddleware> logger)
         {
             _next = next;
@@ -29,11 +28,12 @@ namespace WebAPI.Middleware
             }
             catch (Exception e)
             {
-                await ManejadorExcepctionAsincrono(context, e, _logger);
+                await ManejadorExceptionAsincrono(context, e, _logger);
             }
+            
         }
 
-        private async Task ManejadorExcepctionAsincrono(HttpContext context, Exception e, ILogger<ManejadorErrorMiddleware> logger)
+        private async Task ManejadorExceptionAsincrono(HttpContext context, Exception e, ILogger<ManejadorErrorMiddleware> logger)
         {
             object errores = null;
             switch (e)
@@ -43,9 +43,8 @@ namespace WebAPI.Middleware
                     errores = me.Errores;
                     context.Response.StatusCode = (int)me.Codigo;
                     break;
-
                 case Exception ex:
-                    logger.LogError(ex, "Manejador Error");
+                    logger.LogError(ex, "Error de Servidor");
                     errores = string.IsNullOrWhiteSpace(ex.Message) ? "Error" : ex.Message;
                     context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
                     break;

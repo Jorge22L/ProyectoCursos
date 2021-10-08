@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Aplicacion.Curso
+namespace Aplicacion.Cursos
 {
     public class Consulta
     {
@@ -17,17 +17,20 @@ namespace Aplicacion.Curso
 
         public class Manejador : IRequestHandler<ListaCursos, List<tblCurso>>
         {
-            private readonly CursosContext _context;
 
+            private readonly CursosContext _context;
             public Manejador(CursosContext context)
             {
                 _context = context;
             }
+
             public async Task<List<tblCurso>> Handle(ListaCursos request, CancellationToken cancellationToken)
             {
                 var cursos = await _context.tblCurso.ToListAsync();
                 return cursos;
             }
+
         }
     }
 }
+
