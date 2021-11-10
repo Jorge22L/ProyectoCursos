@@ -1,6 +1,7 @@
 ﻿using Aplicacion.Cursos;
 using Dominio;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace WebAPI.Controllers
     [ApiController]
     public class CursosController : MiControllerBase
     {
+
         [HttpGet]
         public async Task<ActionResult<List<tblCurso>>> Get()
         {

@@ -71,3 +71,6 @@ C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\ref\WebAPI.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.pdb
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.genruntimeconfig.cache
+C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Seguridad.dll
+C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Seguridad.pdb
+C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

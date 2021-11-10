@@ -1,5 +1,6 @@
 ﻿using Aplicacion.Seguridad;
 using Dominio;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace WebAPI.Controllers
 {
-    
+    [AllowAnonymous]
     public class UsuarioController : MiControllerBase
     {
         [HttpPost("login")]
