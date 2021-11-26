@@ -1,3 +1,10 @@
+C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.csproj.AssemblyReference.cache
+C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.AssemblyInfo.cs
+C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\appsettings.json
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\WebAPI.exe
@@ -7,6 +14,8 @@ C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\WebAPI.runti
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\WebAPI.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\ref\WebAPI.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\WebAPI.pdb
+C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\FluentValidation.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
@@ -58,13 +67,6 @@ C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Aplicacion.p
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Seguridad.pdb
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Dominio.pdb
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Persistencia.pdb
-C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.csproj.AssemblyReference.cache
-C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.AssemblyInfoInputs.cache
-C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.AssemblyInfo.cs
-C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.csproj.CoreCompileInputs.cache
-C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\scopedcss\bundle\WebAPI.styles.css
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\staticwebassets\WebAPI.StaticWebAssets.Manifest.cache
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.RazorTargetAssemblyInfo.cache

@@ -1,4 +1,5 @@
-﻿using Aplicacion.Cursos;
+﻿using Aplicacion.Curso;
+using Aplicacion.Cursos;
 using Dominio;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -16,7 +17,7 @@ namespace WebAPI.Controllers
     {
 
         [HttpGet]
-        public async Task<ActionResult<List<tblCurso>>> Get()
+        public async Task<ActionResult<List<CursoDto>>> Get()
         {
             return await Mediator.Send(new Consulta.ListaCursos());
         }
