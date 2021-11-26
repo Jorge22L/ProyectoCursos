@@ -1,4 +1,5 @@
-﻿using Dominio;
+﻿using Aplicacion.Curso;
+using Dominio;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistencia;
@@ -13,9 +14,9 @@ namespace Aplicacion.Cursos
 {
     public class Consulta
     {
-        public class ListaCursos : IRequest<List<tblCurso>> { }
+        public class ListaCursos : IRequest<List<CursosDto>> { }
 
-        public class Manejador : IRequestHandler<ListaCursos, List<tblCurso>>
+        public class Manejador : IRequestHandler<ListaCursos, List<CursosDto>>
         {
 
             private readonly CursosContext _context;
@@ -24,9 +25,9 @@ namespace Aplicacion.Cursos
                 _context = context;
             }
 
-            public async Task<List<tblCurso>> Handle(ListaCursos request, CancellationToken cancellationToken)
+            public async Task<List<CursosDto>> Handle(ListaCursos request, CancellationToken cancellationToken)
             {
-                var cursos = await _context.tblCurso.ToListAsync();
+                var cursos = await _context.tblCurso.Include(x => x.InstructoresLink).ThenInclude(y => y.Instructor).ToListAsync();
                 return cursos;
             }
 

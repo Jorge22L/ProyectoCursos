@@ -42,15 +42,17 @@ namespace WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(o => o.AddPolicy("corsApp", builder => {
+                builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+            }));
             services.AddDbContext<CursosContext>(opt => {
                 opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
             services.AddMediatR(typeof(Consulta));
-            services.AddControllers(opt =>
-            {
+            services.AddControllers(opt => {
                 var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
                 opt.Filters.Add(new AuthorizeFilter(policy));
-            }).AddFluentValidation( cfg => cfg.RegisterValidatorsFromAssemblyContaining<Nuevo>() );
+            }).AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<Nuevo>());
 
             var builder = services.AddIdentityCore<tblUsuario>();
             var identityBuilder = new IdentityBuilder(builder.UserType, builder.Services);
@@ -58,8 +60,12 @@ namespace WebAPI
             identityBuilder.AddSignInManager<SignInManager<tblUsuario>>();
             services.TryAddSingleton<ISystemClock, SystemClock>();
 
+            services.AddScoped<IJwtGenerador, JwtGenerador>();
+            services.AddScoped<IUsuarioSesion, UsuarioSesion>();
+            services.AddHttpContextAccessor();
+
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Mi Palabra secreta"));
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer( opt =>
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
             {
                 opt.TokenValidationParameters = new TokenValidationParameters
                 {
@@ -69,28 +75,29 @@ namespace WebAPI
                     ValidateIssuer = false
                 };
             });
+            
 
-            services.AddScoped<IJwtGenerador, JwtGenerador>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseCors("corsApp");
+            
             app.UseMiddleware<ManejadorErrorMiddleware>();
-
+            
             if (env.IsDevelopment())
             {
                 //app.UseDeveloperExceptionPage();
-        
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseAuthentication();
-
+            
             app.UseRouting();
 
             app.UseAuthorization();
-
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

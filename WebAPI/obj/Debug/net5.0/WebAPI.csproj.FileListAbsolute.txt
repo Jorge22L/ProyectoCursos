@@ -13,6 +13,7 @@ C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\FluentValida
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Humanizer.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\MediatR.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -52,7 +53,9 @@ C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\runtimes\win
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Aplicacion.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Dominio.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Persistencia.dll
+C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Seguridad.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Aplicacion.pdb
+C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Seguridad.pdb
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Dominio.pdb
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Persistencia.pdb
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.csproj.AssemblyReference.cache
@@ -62,15 +65,11 @@ C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.Assem
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.csproj.CoreCompileInputs.cache
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\staticwebassets\WebAPI.StaticWebAssets.Manifest.cache
-C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\staticwebassets\WebAPI.StaticWebAssets.xml
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\scopedcss\bundle\WebAPI.styles.css
+C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\staticwebassets\WebAPI.StaticWebAssets.Manifest.cache
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.RazorTargetAssemblyInfo.cache
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.csproj.CopyComplete
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\ref\WebAPI.dll
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.pdb
 C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\obj\Debug\net5.0\WebAPI.genruntimeconfig.cache
-C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Seguridad.dll
-C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Seguridad.pdb
-C:\Users\JorgeL\source\repos\ProyectoCursos\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

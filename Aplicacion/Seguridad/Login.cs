@@ -58,10 +58,11 @@ namespace Aplicacion.Seguridad
                 {
                     return new UsuarioData
                     {
+                        ID = usuario.Id,
                         NombreCompleto = usuario.NombreCompleto,
                         Token = _jwtGenerador.CrearToken(usuario),
-                        Email = usuario.Email,
                         UserName = usuario.UserName,
+                        Email = usuario.Email,
                         Imagen = null
                     };
                 }
